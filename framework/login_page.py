@@ -2,7 +2,7 @@ from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
 from appium.options.android import UiAutomator2Options
 from utils.android_utils import android_get_desired_capabilities
-from page import Page
+from .page import Page
 
 
 LOGIN_BUTTON = 'com.ajaxsystems:id/authHelloLogin'
@@ -20,6 +20,7 @@ class LoginPage(Page):
         except Exception as ex:
              print(f"Error clicking login button: {ex}")
              return False
+        
         
     def enter_login_data(self, email, password):
         try:
@@ -51,5 +52,7 @@ if __name__ == '__main__':
     login_page = LoginPage(driver=driver)
     login_page.login_button()
     login_page.enter_login_data(email='qa.ajax.app.automation@gmail.com', password='qa_automation_password')
+    login_page.confirm_login()
     
     driver.quit()
+    

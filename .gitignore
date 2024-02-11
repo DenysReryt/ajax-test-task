@@ -1,3 +1,6 @@
 venv
 __pycache__
 ajax_test.egg-info
+.pytest_cache
+pytest.log
+.DS_Store
