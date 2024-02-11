@@ -1,9 +1,9 @@
 # Autotests for Ajax Systems 
 ### First of all, make sure you have made the correct settings for Appium:
 Quickstart Appium - https://appium.io/docs/en/2.0/quickstart/
-### Also in my case i used Android Studio:
+### Also in my case i used Android Studio to emulate Android device:
 Android Studio - https://developer.android.com/studio/run/emulator
-> **_Note:_** After installing Android Studio and setting up the device, you need to install [Ajax Systems App](https://play.google.com/store/apps/details?id=com.ajaxsystems)
+> **_Note:_** After installing Android Studio and setting up the device, you need to install [Ajax Systems App](https://play.google.com/store/apps/details?id=com.ajaxsystems) on your Android device
 ### To inspect element on the testing app i used Appium Inspector:
 Appium Inspector - https://github.com/appium/appium-inspector/releases
 
