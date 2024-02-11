@@ -6,3 +6,4 @@ from framework.login_page import LoginPage
 def user_login_fixture(driver):
     login = LoginPage(driver=driver)
     yield login
+    

@@ -26,6 +26,7 @@ class Page:
         element = self.find_element(by=by, value=value)
         if element:
             element.click()
+            return True
         else:
             raise NoSuchElementException()
         
@@ -37,6 +38,7 @@ class Page:
         element = self.find_element(by=by, value=value)
         if element:
             element.send_keys(key)
+            return True
         else:
             raise NoSuchElementException()
                 
